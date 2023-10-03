@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -18,8 +19,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-import org.testng.xml.XmlTest;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -33,8 +32,7 @@ public class TC001 extends TestListenerAdapter {
 	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");  
 	LocalDateTime now = LocalDateTime.now(); 
 	String testName;
-	
-	
+
 	@BeforeTest
 	public void setup(ITestContext context)
 	{
@@ -55,7 +53,7 @@ public class TC001 extends TestListenerAdapter {
 	{
 		TakesScreenshot scrShot =((TakesScreenshot)d);
 		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile=new File("screenshot/test.png");
+		File DestFile=new File("screenshot/"+dtf.format(now)+".png");
 		try {
 			FileUtils.copyFile(SrcFile, DestFile);
 		} catch (IOException e) {

@@ -2,102 +2,102 @@
 <testng-results ignored="4" total="16" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-01T18:42:03 IST" name="RegressionSuites" finished-at="2023-10-01T18:42:36 IST" duration-ms="33283">
+  <suite started-at="2023-10-02T09:44:40 IST" name="RegressionSuites" finished-at="2023-10-02T09:46:02 IST" duration-ms="82165">
     <groups>
     </groups>
-    <test started-at="2023-10-01T18:42:03 IST" name="RegressionTest" finished-at="2023-10-01T18:42:22 IST" duration-ms="18402">
+    <test started-at="2023-10-02T09:44:40 IST" name="RegressionTest" finished-at="2023-10-02T09:45:30 IST" duration-ms="50244">
       <class name="Regression.TestXpath">
-        <test-method is-config="true" signature="set()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:04 IST" name="set" finished-at="2023-10-01T18:42:15 IST" duration-ms="11001" status="PASS">
+        <test-method is-config="true" signature="set()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:42 IST" name="set" finished-at="2023-10-02T09:45:06 IST" duration-ms="24316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method signature="login()[pri:1, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:15 IST" name="login" finished-at="2023-10-01T18:42:19 IST" duration-ms="4090" status="PASS">
+        <test-method signature="login()[pri:1, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:06 IST" name="login" finished-at="2023-10-02T09:45:16 IST" duration-ms="9620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="VerifyLoginError()[pri:2, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:19 IST" name="VerifyLoginError" finished-at="2023-10-01T18:42:20 IST" duration-ms="1542" status="PASS">
+        <test-method signature="VerifyLoginError()[pri:2, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:16 IST" name="VerifyLoginError" finished-at="2023-10-02T09:45:20 IST" duration-ms="4799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginError -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:20 IST" name="quit" finished-at="2023-10-01T18:42:21 IST" duration-ms="585" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:20 IST" name="quit" finished-at="2023-10-02T09:45:27 IST" duration-ms="6464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- Regression.TestXpath -->
       <class name="Regression.TC002">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:03 IST" name="setup" finished-at="2023-10-01T18:42:04 IST" duration-ms="455" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:40 IST" name="setup" finished-at="2023-10-02T09:44:41 IST" duration-ms="1146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@f2276c9]]>
+                <![CDATA[org.testng.TestRunner@77cb452c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:04 IST" name="logtest" finished-at="2023-10-01T18:42:04 IST" duration-ms="24" status="PASS">
+        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:42 IST" name="logtest" finished-at="2023-10-02T09:44:42 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest -->
-        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:04 IST" name="logtest2" finished-at="2023-10-01T18:42:04 IST" duration-ms="2" status="PASS">
+        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:42 IST" name="logtest2" finished-at="2023-10-02T09:44:42 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest2 -->
-        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:04 IST" name="logtest3" finished-at="2023-10-01T18:42:04 IST" duration-ms="2" status="PASS">
+        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:42 IST" name="logtest3" finished-at="2023-10-02T09:44:42 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest3 -->
-        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:04 IST" name="logtest4" finished-at="2023-10-01T18:42:04 IST" duration-ms="3" status="PASS">
+        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:42 IST" name="logtest4" finished-at="2023-10-02T09:44:42 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest4 -->
-        <test-method signature="logtest5()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:04 IST" name="logtest5" finished-at="2023-10-01T18:42:04 IST" duration-ms="3" status="PASS">
+        <test-method signature="logtest5()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:44:42 IST" name="logtest5" finished-at="2023-10-02T09:44:42 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest5 -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:21 IST" name="closeReport" finished-at="2023-10-01T18:42:22 IST" duration-ms="608" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:27 IST" name="closeReport" finished-at="2023-10-02T09:45:30 IST" duration-ms="3613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
       </class> <!-- Regression.TC002 -->
     </test> <!-- RegressionTest -->
-    <test started-at="2023-10-01T18:42:22 IST" name="SmokeTest" finished-at="2023-10-01T18:42:36 IST" duration-ms="14801">
+    <test started-at="2023-10-02T09:45:31 IST" name="SmokeTest" finished-at="2023-10-02T09:46:02 IST" duration-ms="31750">
       <class name="SmokeTest.TestXpath">
-        <test-method signature="main1()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:22 IST" name="main1" finished-at="2023-10-01T18:42:36 IST" duration-ms="14518" status="PASS">
+        <test-method signature="main1()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:32 IST" name="main1" finished-at="2023-10-02T09:46:02 IST" duration-ms="30529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main1 -->
       </class> <!-- SmokeTest.TestXpath -->
       <class name="SmokeTest.TC002">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:22 IST" name="setup" finished-at="2023-10-01T18:42:22 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:31 IST" name="setup" finished-at="2023-10-02T09:45:31 IST" duration-ms="28" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@12d2ddde]]>
+                <![CDATA[org.testng.TestRunner@2213639b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:22 IST" name="logtest" finished-at="2023-10-01T18:42:22 IST" duration-ms="143" status="PASS">
+        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:31 IST" name="logtest" finished-at="2023-10-02T09:45:31 IST" duration-ms="712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest -->
-        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:22 IST" name="logtest2" finished-at="2023-10-01T18:42:22 IST" duration-ms="23" status="PASS">
+        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:31 IST" name="logtest2" finished-at="2023-10-02T09:45:31 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest2 -->
-        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:22 IST" name="logtest3" finished-at="2023-10-01T18:42:22 IST" duration-ms="27" status="PASS">
+        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:31 IST" name="logtest3" finished-at="2023-10-02T09:45:32 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest3 -->
-        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:22 IST" name="logtest4" finished-at="2023-10-01T18:42:22 IST" duration-ms="33" status="PASS">
+        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:45:32 IST" name="logtest4" finished-at="2023-10-02T09:45:32 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest4 -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-01T18:42:36 IST" name="closeReport" finished-at="2023-10-01T18:42:36 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-10-02T09:46:02 IST" name="closeReport" finished-at="2023-10-02T09:46:02 IST" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->

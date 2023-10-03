@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="RegressionSuites">
  <test thread-count="5" name="RegressionTest"> 
-    <parameter name = "testType" value="Regression_Test"/>
+    <parameter name = "password" value="user2test"/>
     <classes>
       <class name="Regression.TC002"/>
       <class name="Regression.TestXpath"/>
