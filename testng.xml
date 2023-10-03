@@ -6,6 +6,7 @@
     <classes>
       <class name="Regression.TC002"/>
       <class name="Regression.TestXpath"/>
+      <class name="Regression.NewUserRegistration"/>
     </classes>
   </test><!-- Test -->
   <test thread-count="5" name="SmokeTest">
