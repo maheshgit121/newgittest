@@ -5,8 +5,10 @@
     <classes>
       <class name="Regression.AllLinkTestsOnPage">
         <methods>
+          <include name="closeReport"/>
           <include name="LaunchBrowser"/>
           <include name="Linkstest"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- Regression.AllLinkTestsOnPage -->
     </classes>

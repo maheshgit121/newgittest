@@ -1,4 +1,6 @@
 package Utilities;
+
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -11,6 +13,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 
 public class WriteToExcel {
@@ -85,7 +88,11 @@ public class WriteToExcel {
 			r=s.getRow(rc++);
 			c=r.getCell(col);
 			String res=c.getStringCellValue();
+			String exp=e.getAttribute("href");
 			result=res.equalsIgnoreCase(e.getAttribute("href"));
+			System.out.println(res);
+			System.out.println(e.getAttribute("href"));
+		    Assert.assertEquals(res, exp);
 			if(result==false)
 			{
 				falsecount++;

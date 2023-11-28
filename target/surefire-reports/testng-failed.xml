@@ -4,16 +4,14 @@
   <test thread-count="5" name="RegressionTest(failed)" verbose="0">
     <parameter name="password" value="user2test"/>
     <classes>
-      <class name="Regression.TestXpath">
+      <class name="Regression.AllLinkTestsOnPage">
         <methods>
           <include name="closeReport"/>
-          <include name="quit"/>
-          <include name="login"/>
+          <include name="LaunchBrowser"/>
+          <include name="Linkstest"/>
           <include name="setup"/>
-          <include name="VerifyLoginError"/>
-          <include name="set"/>
         </methods>
-      </class> <!-- Regression.TestXpath -->
+      </class> <!-- Regression.AllLinkTestsOnPage -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [RegressionSuites] -->

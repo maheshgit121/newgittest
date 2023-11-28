@@ -1,127 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="22" passed="14" failed="0" skipped="0">
+<testng-results ignored="8" total="22" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-28T16:15:00 IST" name="RegressionSuites" finished-at="2023-11-28T16:16:02 IST" duration-ms="61851">
+  <suite started-at="2023-11-28T22:31:02 IST" name="RegressionSuites" finished-at="2023-11-28T22:32:30 IST" duration-ms="87724">
     <groups>
     </groups>
-    <test started-at="2023-11-28T16:15:00 IST" name="RegressionTest" finished-at="2023-11-28T16:15:48 IST" duration-ms="47846">
+    <test started-at="2023-11-28T22:31:02 IST" name="RegressionTest" finished-at="2023-11-28T22:32:13 IST" duration-ms="70666">
       <class name="Regression.AllLinkTestsOnPage">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:[AllLinkTestsOnPage passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:37 IST" name="LaunchBrowser" finished-at="2023-11-28T16:15:45 IST" duration-ms="8092" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:[AllLinkTestsOnPage passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:55 IST" name="LaunchBrowser" finished-at="2023-11-28T22:32:06 IST" duration-ms="10863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Linkstest()[pri:0, instance:[AllLinkTestsOnPage passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:45 IST" name="Linkstest" finished-at="2023-11-28T16:15:47 IST" duration-ms="2537" status="PASS">
+        <test-method signature="Linkstest()[pri:0, instance:[AllLinkTestsOnPage passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:06 IST" name="Linkstest" finished-at="2023-11-28T22:32:11 IST" duration-ms="5204" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://automationexercise.com/] but found [https://automationexercise.com1/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://automationexercise.com/] but found [https://automationexercise.com1/]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Utilities.WriteToExcel.CompareLinksOnThePage(WriteToExcel.java:95)
+at BaseClasses.LinkValidation.FindAndCompareAllLinks(LinkValidation.java:44)
+at Regression.AllLinkTestsOnPage.Linkstest(AllLinkTestsOnPage.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Linkstest -->
       </class> <!-- Regression.AllLinkTestsOnPage -->
       <class name="Regression.NewUserRegistration">
-        <test-method is-config="true" signature="set()[pri:0, instance:[NewUserRegistration passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:15 IST" name="set" finished-at="2023-11-28T16:15:25 IST" duration-ms="9770" status="PASS">
+        <test-method is-config="true" signature="set()[pri:0, instance:[NewUserRegistration passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:27 IST" name="set" finished-at="2023-11-28T22:31:42 IST" duration-ms="14071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method signature="TestResistraion()[pri:0, instance:[NewUserRegistration passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:25 IST" name="TestResistraion" finished-at="2023-11-28T16:15:36 IST" duration-ms="11198" status="PASS">
+        <test-method signature="TestResistraion()[pri:0, instance:[NewUserRegistration passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:42 IST" name="TestResistraion" finished-at="2023-11-28T22:31:54 IST" duration-ms="12690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestResistraion -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:[NewUserRegistration passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:36 IST" name="quit" finished-at="2023-11-28T16:15:37 IST" duration-ms="584" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:[NewUserRegistration passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:54 IST" name="quit" finished-at="2023-11-28T22:31:55 IST" duration-ms="746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- Regression.NewUserRegistration -->
       <class name="Regression.TestXpath">
-        <test-method is-config="true" signature="set()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:01 IST" name="set" finished-at="2023-11-28T16:15:11 IST" duration-ms="10152" status="PASS">
+        <test-method is-config="true" signature="set()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:03 IST" name="set" finished-at="2023-11-28T22:31:19 IST" duration-ms="16265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set -->
-        <test-method signature="login()[pri:1, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:11 IST" name="login" finished-at="2023-11-28T16:15:14 IST" duration-ms="3102" status="PASS">
+        <test-method signature="login()[pri:1, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:19 IST" name="login" finished-at="2023-11-28T22:31:26 IST" duration-ms="6805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="VerifyLoginError()[pri:2, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:14 IST" name="VerifyLoginError" finished-at="2023-11-28T16:15:15 IST" duration-ms="405" status="PASS">
+        <test-method signature="VerifyLoginError()[pri:2, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:26 IST" name="VerifyLoginError" finished-at="2023-11-28T22:31:27 IST" duration-ms="964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyLoginError -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:15 IST" name="quit" finished-at="2023-11-28T16:15:15 IST" duration-ms="639" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:27 IST" name="quit" finished-at="2023-11-28T22:31:27 IST" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- Regression.TestXpath -->
       <class name="Regression.TC002">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:00 IST" name="setup" finished-at="2023-11-28T16:15:01 IST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:02 IST" name="setup" finished-at="2023-11-28T22:31:03 IST" duration-ms="526" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@f4f843f]]>
+                <![CDATA[org.testng.TestRunner@642c72cf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:01 IST" name="logtest" finished-at="2023-11-28T16:15:01 IST" duration-ms="26" status="PASS">
+        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:03 IST" name="logtest" finished-at="2023-11-28T22:31:03 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest -->
-        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:01 IST" name="logtest2" finished-at="2023-11-28T16:15:01 IST" duration-ms="5" status="PASS">
+        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:03 IST" name="logtest2" finished-at="2023-11-28T22:31:03 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest2 -->
-        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:01 IST" name="logtest3" finished-at="2023-11-28T16:15:01 IST" duration-ms="2" status="PASS">
+        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:03 IST" name="logtest3" finished-at="2023-11-28T22:31:03 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest3 -->
-        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:01 IST" name="logtest4" finished-at="2023-11-28T16:15:01 IST" duration-ms="2" status="PASS">
+        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:03 IST" name="logtest4" finished-at="2023-11-28T22:31:03 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest4 -->
-        <test-method signature="logtest5()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:01 IST" name="logtest5" finished-at="2023-11-28T16:15:01 IST" duration-ms="2" status="PASS">
+        <test-method signature="logtest5()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:31:03 IST" name="logtest5" finished-at="2023-11-28T22:31:03 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest5 -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:47 IST" name="closeReport" finished-at="2023-11-28T16:15:48 IST" duration-ms="780" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:11 IST" name="closeReport" finished-at="2023-11-28T22:32:13 IST" duration-ms="1668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
       </class> <!-- Regression.TC002 -->
     </test> <!-- RegressionTest -->
-    <test started-at="2023-11-28T16:15:48 IST" name="SmokeTest" finished-at="2023-11-28T16:16:02 IST" duration-ms="13943">
+    <test started-at="2023-11-28T22:32:13 IST" name="SmokeTest" finished-at="2023-11-28T22:32:30 IST" duration-ms="16879">
       <class name="SmokeTest.TestXpath">
-        <test-method signature="main1()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:49 IST" name="main1" finished-at="2023-11-28T16:16:02 IST" duration-ms="13584" status="PASS">
+        <test-method signature="main1()[pri:0, instance:[TestXpath passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:13 IST" name="main1" finished-at="2023-11-28T22:32:30 IST" duration-ms="16645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main1 -->
       </class> <!-- SmokeTest.TestXpath -->
       <class name="SmokeTest.TC002">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:48 IST" name="setup" finished-at="2023-11-28T16:15:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:13 IST" name="setup" finished-at="2023-11-28T22:32:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7b5833ee]]>
+                <![CDATA[org.testng.TestRunner@4e6cbdf1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:48 IST" name="logtest" finished-at="2023-11-28T16:15:48 IST" duration-ms="210" status="PASS">
+        <test-method signature="logtest()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:13 IST" name="logtest" finished-at="2023-11-28T22:32:13 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest -->
-        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:48 IST" name="logtest2" finished-at="2023-11-28T16:15:48 IST" duration-ms="26" status="PASS">
+        <test-method signature="logtest2()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:13 IST" name="logtest2" finished-at="2023-11-28T22:32:13 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest2 -->
-        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:48 IST" name="logtest3" finished-at="2023-11-28T16:15:48 IST" duration-ms="40" status="PASS">
+        <test-method signature="logtest3()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:13 IST" name="logtest3" finished-at="2023-11-28T22:32:13 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest3 -->
-        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:15:48 IST" name="logtest4" finished-at="2023-11-28T16:15:49 IST" duration-ms="50" status="PASS">
+        <test-method signature="logtest4()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:13 IST" name="logtest4" finished-at="2023-11-28T22:32:13 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logtest4 -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T16:16:02 IST" name="closeReport" finished-at="2023-11-28T16:16:02 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:[TC002 passed=0 failed=0 skipped=0]]" started-at="2023-11-28T22:32:30 IST" name="closeReport" finished-at="2023-11-28T22:32:30 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
