@@ -37,10 +37,13 @@ public class RegistrationSuccessfullPage extends TC001 {
 		public void VerifySuccessfullMsg()
 		{
 			
-			Boolean pt = pageTitle.isDisplayed();
+			String pt1 = pageTitle.getText();
+			Boolean pt = driver.getTitle().equalsIgnoreCase("Automation Exercise - Account Created");
+			//Boolean pt = pageTitle.getText().equalsIgnoreCase("Automation Exercise - Account Created");
 			Boolean ac = accountCreated.isDisplayed();
 			Boolean cong = congratulations.isDisplayed();
 			Boolean se = shopExp.isDisplayed();
+			System.out.println(pt1);
 			
 			if(pt&&ac&&cong&&se)
 			{
