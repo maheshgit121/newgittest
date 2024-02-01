@@ -90,8 +90,8 @@ public class WriteToExcel {
 			String res=c.getStringCellValue();
 			String exp=e.getAttribute("href");
 			result=res.equalsIgnoreCase(e.getAttribute("href"));
-			System.out.println(res);
-			System.out.println(e.getAttribute("href"));
+			System.out.println("Value from Excel:" + res);
+			System.out.println("Value from Application"+e.getAttribute("href"));
 		    Assert.assertEquals(res, exp);
 			if(result==false)
 			{

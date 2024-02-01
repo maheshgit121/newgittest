@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-RegressionSuites" class="navigator-link">
-              <span class="suite-name border-passed">RegressionSuites</span>
+              <span class="suite-name border-failed">RegressionSuites</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,  3 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuites" class="hide-methods failed suite-RegressionSuites"> (hide)</a> <!-- hide-methods failed suite-RegressionSuites -->
+                      <a href="#" panel-name="suite-RegressionSuites" class="show-methods failed suite-RegressionSuites"> (show)</a> <!-- show-methods failed suite-RegressionSuites -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionSuites">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.AllLinkTestsOnPage" class="method navigator-link" hash-for-method="Linkstest">Linkstest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuites" title="SmokeTest.TestXpath" class="method navigator-link" hash-for-method="main1">main1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionSuites -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RegressionSuites" class="hide-methods skipped suite-RegressionSuites"> (hide)</a> <!-- hide-methods skipped suite-RegressionSuites -->
+                      <a href="#" panel-name="suite-RegressionSuites" class="show-methods skipped suite-RegressionSuites"> (show)</a> <!-- show-methods skipped suite-RegressionSuites -->
+                    </span>
+                    <div class="method-list-content skipped suite-RegressionSuites">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.NewUserRegistration" class="method navigator-link" hash-for-method="TestResistraion">TestResistraion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.TestXpath" class="method navigator-link" hash-for-method="VerifyLoginError">VerifyLoginError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.TestXpath" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-RegressionSuites -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,21 +144,6 @@
                       <a href="#" panel-name="suite-RegressionSuites" class="show-methods passed suite-RegressionSuites"> (show)</a> <!-- show-methods passed suite-RegressionSuites -->
                     </span>
                     <div class="method-list-content passed suite-RegressionSuites">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.NewUserRegistration" class="method navigator-link" hash-for-method="TestResistraion">TestResistraion</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.TestXpath" class="method navigator-link" hash-for-method="VerifyLoginError">VerifyLoginError</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuites" title="Regression.TestXpath" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-RegressionSuites" title="Regression.TC002" class="method navigator-link" hash-for-method="logtest">logtest</a> <!-- method navigator-link -->
@@ -161,11 +189,6 @@
                         <a href="#" panel-name="suite-RegressionSuites" title="Regression.TC002" class="method navigator-link" hash-for-method="logtest5">logtest5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-RegressionSuites" title="SmokeTest.TestXpath" class="method navigator-link" hash-for-method="main1">main1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-RegressionSuites -->
                   </li>
                 </ul>
@@ -178,31 +201,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RegressionSuites" class="panel RegressionSuites">
-          <div class="suite-RegressionSuites-class-passed">
+          <div class="suite-RegressionSuites-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Regression.TestXpath</span>
+              <img src="failed.png"/>
+              <span class="class-name">Regression.AllLinkTestsOnPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyLoginError">
-                  </a> <!-- VerifyLoginError -->
-                  <span class="method-name">VerifyLoginError</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
+                  <a name="Linkstest">
+                  </a> <!-- Linkstest -->
+                  <span class="method-name">Linkstest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://automationexercise.com/] but found []
+	at Utilities.WriteToExcel.CompareLinksOnThePage(WriteToExcel.java:95)
+	at BaseClasses.LinkValidation.FindAndCompareAllLinks(LinkValidation.java:44)
+	at Regression.AllLinkTestsOnPage.Linkstest(AllLinkTestsOnPage.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuites-class-passed -->
-          <div class="suite-RegressionSuites-class-passed">
+          </div> <!-- suite-RegressionSuites-class-failed -->
+          <div class="suite-RegressionSuites-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">SmokeTest.TestXpath</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -211,10 +234,222 @@
                   <a name="main1">
                   </a> <!-- main1 -->
                   <span class="method-name">main1</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d021dce2f85605b34c17cbbbf3956208, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\mahesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51820}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51820/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d021dce2f85605b34c17cbbbf3956208
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:280)
+	at SmokeTest.TestXpath.quit(TestXpath.java:39)
+	at SmokeTest.TestXpath.main1(TestXpath.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	... 39 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:114)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuites-class-passed -->
+          </div> <!-- suite-RegressionSuites-class-failed -->
+          <div class="suite-RegressionSuites-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Regression.TestXpath</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginError">
+                  </a> <!-- VerifyLoginError -->
+                  <span class="method-name">VerifyLoginError</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-MNI71QO&apos;, ip: &apos;192.168.0.81&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at Regression.TestXpath.set(TestXpath.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:243)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 36 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:233)
+	... 38 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:264)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:218)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:8730/status] to be available after 20007 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:260)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-MNI71QO&apos;, ip: &apos;192.168.0.81&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at Regression.TestXpath.set(TestXpath.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:243)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 36 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:233)
+	... 38 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:264)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:218)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:8730/status] to be available after 20007 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:260)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuites-class-skipped -->
+          <div class="suite-RegressionSuites-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Regression.NewUserRegistration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestResistraion">
+                  </a> <!-- TestResistraion -->
+                  <span class="method-name">TestResistraion</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-MNI71QO&apos;, ip: &apos;192.168.0.81&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:70)
+	at Regression.NewUserRegistration.set(NewUserRegistration.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:243)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 36 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:233)
+	... 38 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.7.0&apos;, revision: &apos;0a5b49d16f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:264)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:218)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:25899/status] to be available after 20002 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:260)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuites-class-skipped -->
           <div class="suite-RegressionSuites-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -254,21 +489,6 @@
                   <a name="logtest5">
                   </a> <!-- logtest5 -->
                   <span class="method-name">logtest5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RegressionSuites-class-passed -->
-          <div class="suite-RegressionSuites-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Regression.NewUserRegistration</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestResistraion">
-                  </a> <!-- TestResistraion -->
-                  <span class="method-name">TestResistraion</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -325,6 +545,7 @@
       &lt;class name=&quot;Regression.TC002&quot;/&gt;
       &lt;class name=&quot;Regression.TestXpath&quot;/&gt;
       &lt;class name=&quot;Regression.NewUserRegistration&quot;/&gt;
+      &lt;class name=&quot;Regression.AllLinkTestsOnPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RegressionTest --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTest&quot; verbose=&quot;0&quot;&gt;
@@ -345,7 +566,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">RegressionTest (3 classes)</span>
+                <span class="test-name">RegressionTest (4 classes)</span>
               </li>
               <li>
                 <span class="test-name">SmokeTest (2 classes)</span>
@@ -374,64 +595,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'Regression.TestXpath')
-data.setCell(0, 3, 17992);
+data.setCell(0, 1, 'main1')
+data.setCell(0, 2, 'SmokeTest.TestXpath')
+data.setCell(0, 3, 143492);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestResistraion')
-data.setCell(1, 2, 'Regression.NewUserRegistration')
-data.setCell(1, 3, 17756);
+data.setCell(1, 1, 'Linkstest')
+data.setCell(1, 2, 'Regression.AllLinkTestsOnPage')
+data.setCell(1, 3, 49940);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'main1')
-data.setCell(2, 2, 'SmokeTest.TestXpath')
-data.setCell(2, 3, 15284);
+data.setCell(2, 1, 'logtest')
+data.setCell(2, 2, 'SmokeTest.TC002')
+data.setCell(2, 3, 396);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyLoginError')
-data.setCell(3, 2, 'Regression.TestXpath')
-data.setCell(3, 3, 1703);
+data.setCell(3, 1, 'logtest')
+data.setCell(3, 2, 'Regression.TC002')
+data.setCell(3, 3, 92);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'logtest')
+data.setCell(4, 1, 'logtest3')
 data.setCell(4, 2, 'SmokeTest.TC002')
-data.setCell(4, 3, 279);
+data.setCell(4, 3, 42);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logtest4')
+data.setCell(5, 1, 'logtest2')
 data.setCell(5, 2, 'SmokeTest.TC002')
-data.setCell(5, 3, 122);
+data.setCell(5, 3, 25);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'logtest')
-data.setCell(6, 2, 'Regression.TC002')
-data.setCell(6, 3, 62);
+data.setCell(6, 1, 'logtest4')
+data.setCell(6, 2, 'SmokeTest.TC002')
+data.setCell(6, 3, 20);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'logtest3')
-data.setCell(7, 2, 'SmokeTest.TC002')
-data.setCell(7, 3, 28);
+data.setCell(7, 1, 'logtest5')
+data.setCell(7, 2, 'Regression.TC002')
+data.setCell(7, 3, 9);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'logtest2')
-data.setCell(8, 2, 'SmokeTest.TC002')
-data.setCell(8, 3, 26);
+data.setCell(8, 1, 'logtest4')
+data.setCell(8, 2, 'Regression.TC002')
+data.setCell(8, 3, 4);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'logtest4')
+data.setCell(9, 1, 'logtest3')
 data.setCell(9, 2, 'Regression.TC002')
-data.setCell(9, 3, 8);
+data.setCell(9, 3, 3);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'logtest5')
+data.setCell(10, 1, 'logtest2')
 data.setCell(10, 2, 'Regression.TC002')
-data.setCell(10, 3, 4);
+data.setCell(10, 3, 3);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'logtest3')
-data.setCell(11, 2, 'Regression.TC002')
-data.setCell(11, 3, 3);
+data.setCell(11, 1, 'TestResistraion')
+data.setCell(11, 2, 'Regression.NewUserRegistration')
+data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'logtest2')
-data.setCell(12, 2, 'Regression.TC002')
-data.setCell(12, 3, 2);
+data.setCell(12, 1, 'VerifyLoginError')
+data.setCell(12, 2, 'Regression.TestXpath')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'login')
+data.setCell(13, 2, 'Regression.TestXpath')
+data.setCell(13, 3, 0);
 window.suiteTableData['RegressionSuites']= { tableData: data, tableDiv: 'times-div-RegressionSuites'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-RegressionSuites">
               </div> <!-- times-div-RegressionSuites -->
             </div> <!-- times-div -->
@@ -446,7 +671,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RegressionSuites" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -459,11 +684,11 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">SmokeTest.TestXpath</span>
+              <span class="ignored-class-name">Regression.AllLinkTestsOnPage</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
                 <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -473,6 +698,15 @@ return data;
                 <span class="ignored-method-name">setup</span>
                 <br/>
                 <span class="ignored-method-name">closeReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">SmokeTest.TestXpath</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeReport</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -486,106 +720,125 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Regression.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup(org.testng.TestRunner@7d59e968)</span>
+                <span class="method-name">setup(org.testng.TestRunner@38c761e9)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">logtest</span>
-                <span class="method-start">1458 ms</span>
+                <span class="method-start">6183 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest2</span>
-                <span class="method-start">1530 ms</span>
+                <span class="method-start">6293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest3</span>
-                <span class="method-start">1535 ms</span>
+                <span class="method-start">6306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest4</span>
-                <span class="method-start">1541 ms</span>
+                <span class="method-start">6312 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest5</span>
-                <span class="method-start">1553 ms</span>
+                <span class="method-start">6318 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression.TestXpath</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">set</span>
-                <span class="method-start">1563 ms</span>
+                <span class="method-start">6330 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">27366 ms</span>
+                <span class="method-start">40318 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginError</span>
-                <span class="method-start">45360 ms</span>
+                <span class="method-start">40325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">47064 ms</span>
+                <span class="method-start">40329 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression.NewUserRegistration</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">set</span>
-                <span class="method-start">50414 ms</span>
+                <span class="method-start">40334 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">TestResistraion</span>
-                <span class="method-start">74955 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">92712 ms</span>
+                <span class="method-start">62914 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">TestResistraion</span>
+                <span class="method-start">62914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Regression.AllLinkTestsOnPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">62915 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Linkstest</span>
+                <span class="method-start">139961 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Regression.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">93649 ms</span>
+                <span class="method-start">189903 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SmokeTest.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup(org.testng.TestRunner@55361f03)</span>
-                <span class="method-start">96849 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@1cee2e10)</span>
+                <span class="method-start">195598 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">logtest</span>
-                <span class="method-start">96853 ms</span>
+                <span class="method-start">195602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest2</span>
-                <span class="method-start">97134 ms</span>
+                <span class="method-start">195999 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest3</span>
-                <span class="method-start">97178 ms</span>
+                <span class="method-start">196026 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logtest4</span>
-                <span class="method-start">97207 ms</span>
+                <span class="method-start">196071 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SmokeTest.TestXpath</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">main1</span>
-                <span class="method-start">97333 ms</span>
+                <span class="method-start">196092 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SmokeTest.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">112619 ms</span>
+                <span class="method-start">339588 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

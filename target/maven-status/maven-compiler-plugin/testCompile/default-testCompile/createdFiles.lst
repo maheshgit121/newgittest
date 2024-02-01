@@ -10,6 +10,7 @@ BaseClasses\HomePage.class
 BaseClasses\TC001.class
 SmokeTest\TestXpath.class
 BaseClasses\RegistrationPage.class
+Regression\AllLinkTestsOnPage.class
 Regression\LinkTest.class
 Regression\TC002.class
 TC003.class

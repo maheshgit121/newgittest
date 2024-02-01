@@ -13,12 +13,13 @@ public class AllLinkTestsOnPage extends TC001 {
 	
 	TC001 t = new TC001();
 	WebDriver d;
+	String url ="https://automationexercise.com/login";
 	
 	
 	@BeforeClass
 	public void LaunchBrowser() {
 		
-		d=t.GetBrowser();
+		d=t.GetBrowser(url);
 		
 	}
 	

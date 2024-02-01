@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Regression.AllLinkTestsOnPage">
+      <class name="Regression.DropDownValuesSortTest">
         <methods>
-          <include name="closeReport"/>
-          <include name="LaunchBrowser"/>
-          <include name="Linkstest"/>
-          <include name="setup"/>
+          <include name="verifyOptionValuesStatus"/>
         </methods>
-      </class> <!-- Regression.AllLinkTestsOnPage -->
+      </class> <!-- Regression.DropDownValuesSortTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

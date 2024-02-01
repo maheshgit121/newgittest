@@ -20,7 +20,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
@@ -83,13 +82,13 @@ public class TC001 extends TestListenerAdapter {
 	  
 	}
 	
-	public WebDriver GetBrowser()
+	public WebDriver GetBrowser(String url)
 	{
 		ChromeOptions options = new ChromeOptions();
     	options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
     	options.addArguments("--remote-allow-origins=*");
     	driver= new ChromeDriver(options);
-    	driver.get("https://automationexercise.com/login");
+    	driver.get(url);
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     	driver.manage().window().maximize();
     	return driver;
